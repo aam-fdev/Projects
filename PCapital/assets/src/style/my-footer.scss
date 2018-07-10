@@ -1,0 +1,44 @@
+.footer-main {
+    min-height: 166px;
+    margin-left: 1px;
+    padding-bottom: 30px;
+}
+
+.about {
+    &__img {
+    background: url("../img/p-capital-markets.svg") no-repeat;
+    height: 16px;
+    padding-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.add-info {
+    &__list {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.81;
+    color: $grey-550;
+    list-style: none;
+    }
+}
+
+.mailto {
+    
+    &__header {
+        font-size: 14px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__a {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: $grey-550;
+    }
+}

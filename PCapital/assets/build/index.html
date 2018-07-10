@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="stylesheet" href="style/main.css">
+    
+    <title>PCapital</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container header">
+                <nav class="navbar navbar-expand-lg navbar-light row m-0 p-0 ">
+                        <div class="navbar-brand p-0 m-0 nav__pic-logo"></div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse nav-m" id="navbarNav">
+                            <ul class="navbar-nav nav-h-80 w-100 justify-content-around">
+                                <a class="nav-link nav-item nav-item-font mh-100 d-flex align-items-center active" href="#">Dashboard<span class="sr-only">(current)</span></a>
+                                <a class="nav-link nav-item nav-item-font mh-100 d-flex align-items-center" href="#">Deposit</a>
+                                <a class="nav-link nav-item nav-item-font mh-100 d-flex align-items-center" href="#">Transfer</a>
+                                <a class="nav-link nav-item nav-item-font mh-100 d-flex align-items-center" href="#">Exchange</a>
+                                <a class="nav-link nav-item nav-item-font mh-100 d-flex align-items-center" href="#">Withdraw</a>
+                            </ul>
+                        </div>
+                        <div class="nav__sign-in m-0 p-0">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class=""><img src="img/user.svg" class="icon-header"></a>
+                                <a href="#" class=""><img src="img/logout.svg" class="icon-header"></a>
+                                <a href="#" class=""><img src="img/flag.png" class="icon-flag"></a>
+                            </div>
+                        </div>
+                </nav>
+        </header>
+        <main class="container">
+            <div class="row m-0 p-0 m-row">
+                <section class="col-9 m-0 p-0">
+                    <h2 class="section-header section-header__fa">Favorite accounts</h2>
+                    <div class="row m-0 p-0 d-flex d-flex-fa">
+                        <div class="deposit-account">
+                            <h3 class="deposit-account__header"><span class="deposit-account__header-live">Live 
+                                <span class="deposit-account__header-mod">|</span></span> 42218769</h3>
+                            <p class="deposit-account__company">Transcontinental express</p>
+                            <div class="deposit-account__img">
+                                    <img src="./img/graph-1.png" alt="">
+                            </div>
+                            <p class="deposit-account__sum">
+                                <span class="deposit-account__curr">RUB </span>653 211
+                                <span class="deposit-account__sum-point">,20</span></p>
+                            <button class="deposit-account__btn">Deposit account</button>
+                        </div>
+                        <div class="deposit-account">
+                            <h3 class="deposit-account__header"><span class="deposit-account__header-live">Live 
+                                <span class="deposit-account__header-mod">|</span></span> 42218333</h3>
+                            <p class="deposit-account__company">MT5</p>
+                            <div class="deposit-account__img">
+                                <img src="./img/graph-2.png" alt="">
+                            </div>
+                            <p class="deposit-account__sum">
+                                <span class="deposit-account__curr">USD </span>342 628
+                                <span class="deposit-account__sum-point">,11</span></p>
+                            <button class="deposit-account__btn">Deposit account</button>
+                        </div>
+                    
+                        <form action="" class="create-account ">
+                            <h3 class="create-account__header">Open account</h3>
+                            <div class="position-relative">
+                                <label for="platform" class="create-account__label">Platform</label>
+                                <a class="">
+                                    <img src="img/down.svg" class="icon-down" alt="">
+                                </a>
+                                <select name="platform" class="d-block create-account__select" id="">
+                                    <option value="metaTrader4">MetaTrader 4</option>
+                                    <option value="metaTrader5">MetaTrader 5</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="orderType" class="create-account__label">Order type</label>
+                                <input type="text" name="orderType" value="Hedging" class="d-block create-account__input">
+                            </div>
+                            <div class="position-relative">
+                                <label for="currency" class="create-account__label">Currency</label>
+                                <a class="">
+                                    <img src="img/down.svg" class="icon-down" alt=""> 
+                                </a>
+                                <select name="currency" class="d-block create-account__select" id="">
+                                    <option value="RUR">RUR <span>Russian rouble</span></option>
+                                </select>
+                            </div>
+                            <div class="position-relative">
+                                <label for="leverage" class="create-account__label">Leverage</label>
+                                <a class="">
+                                    <img src="img/down.svg" class="icon-down" alt=""> 
+                                </a>
+                                <select name="leverage" class="d-block create-account__select" id="">
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                            <input type="submit" value="Create account" class="create-account__btn ">
+                        </form>
+                    </div>
+                </section>
+
+                <aside class="col-3 m-0 p-0">
+                    <div class="eWallet d-flex">
+                        <h3 class="eWallet__header">eWallet</h3>
+                        <div class="eWallet__account">
+                            <span class="eWallet__account-curr">EUR</span>
+                            <input type="text" class="eWallet__account-input" value="0,00">
+                            <a class="">
+                                <img src="img/more.svg" class="icon-more" alt=""> 
+                            </a>
+                        </div>
+                        <div class="eWallet__account">
+                            <span class="eWallet__account-curr">USD</span>
+                            <input type="text" class="eWallet__account-input" value="531,13">
+                            <a class="">
+                                <img src="img/more.svg" class="icon-more" alt=""> 
+                            </a>
+                        </div>
+                        <div class="eWallet__account">
+                            <span class="eWallet__account-curr">RUR</span>
+                            <input type="text" class="eWallet__account-input" value="76 503,98">
+                            <a class="">
+                                <img src="img/more.svg" class="icon-more" alt=""> 
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>    
+            
+            <div class="row m-0 p-0 m-row">
+                <section class="col-9 m-0 p-0">
+                    <h4 class="section-header section-header__tp">Trading platforms</h2>
+                    <div class="platform">
+                        <nav class="navbar navbar-expand-sm navbar-light p-0">
+                            <div class="collapse navbar-collapse platform-nav__hr" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <a class="nav-link platform-nav__link nav-nav-item active">Metatrader 4<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link platform-nav__link nav-item" href="#">Metatrader 5</a>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="">
+                            <div class="d-flex justify-content-between platform__list">
+                                <div class="platform__name ">
+                                    <a class="nav-link nav-item">
+                                        <img src="img/internet.svg" class="icon" alt=""> 
+                                        <span class="align-middle platform__link"> Web</span>
+                                    </a>
+                                </div>
+                                <div class="platform__name ">
+                                    <a class="nav-link nav-item">
+                                        <img src="img/windows.svg" style="fill: orange" class="icon" alt=""> 
+                                        <span class="align-middle platform__link"> Windows</span>
+                                    </a>
+                                </div>
+                                <div class="platform__name ">
+                                    <a class="nav-link nav-item">
+                                        <img src="img/macintosh.svg" class="icon" alt=""> 
+                                        <span class="align-middle platform__link"> Mac OS</span>
+                                    </a>
+                                </div>
+                                <div class="platform__name ">
+                                    <a class="nav-link nav-item">
+                                        <img src="img/linux.svg" class="icon " alt=""> 
+                                        <span class="align-middle platform__link"> Linux</span>
+                                    </a>
+                                </div>
+                                <div class="platform__name ">
+                                    <a class="nav-link nav-item">
+                                        <img src="img/apple.svg" class="icon" alt=""> 
+                                        <span class="align-middle platform__link"> iOS</span>
+                                    </a>
+                                </div>
+                                <div class="platform__name ">
+                                    <a class="nav-link nav-item">
+                                        <img src="img/robot.svg" class="icon" alt=""> 
+                                        <span class="align-middle platform__link"> Android</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="container fixed-bottom">
+            <div class="row footer-main">
+                <div class="about col-4 m-0 p-0 d-flex align-items-end">
+                    <div class="">
+                        <div class="about__img"></div>
+                        <p class="about__text m-0">The payment service is provided <br>by B2BInPay.<br>
+                        All rights reserved by PCapitals ltd</p>
+                    </div>
+                </div>
+                <div class="add-info col-4 p-0 d-flex align-items-end">
+                    <ul class="add-info__list m-0">
+                        <li>Terms of use</li>
+                        <li>Trading rules</li>
+                        <li>Risk disclosure statement</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+                <div class="mailto col-4 m-0 p-0 d-flex align-items-end">
+                    <p class="mailto__header m-0" >Need help? 
+                        <a class="mailto__a" href="mailto:support@pcmarketsfx.com"> 
+                        support@pcmarketsfx.com</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

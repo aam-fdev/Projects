@@ -1,0 +1,15 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+@import "variables";
+
+ 
+// Подключение нужных SCSS исходников Bootstrap 4
+@import "../library/bootstrap/scss/bootstrap";
+@import "../library/bootstrap/scss/bootstrap-grid";
+@import "../library/bootstrap/scss/bootstrap-reboot";
+ 
+// Подключение своих SCSS файлов
+@import "my-general";
+@import "my-header";
+@import "my-main";
+@import "my-footer";
+@import "media";
