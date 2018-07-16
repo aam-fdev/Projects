@@ -7,6 +7,11 @@ body {
     background-color: $grey-50;
 }
 
+.wrapper {
+    position: relative;
+    margin-top: 80px;
+}
+
 main {
     background-image:  linear-gradient(to top, $grey-50, $white);
 }
@@ -17,7 +22,7 @@ a:hover {
 }
 
 .wrapper {
-    min-height: 1174px;;
+    min-height: 1094px;;
 }
 
 .container {
