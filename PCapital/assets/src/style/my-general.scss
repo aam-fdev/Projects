@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+    min-height: 1094px;
     position: relative;
     margin-top: 80px;
 }
@@ -19,10 +20,6 @@ main {
 a:hover {
     text-decoration: none;
     color: $orange;
-}
-
-.wrapper {
-    min-height: 1094px;;
 }
 
 .container {

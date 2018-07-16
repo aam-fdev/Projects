@@ -7,7 +7,8 @@
 @media (max-width: 1140px) {
 
     .wrapper {
-        min-height: 1174px;;
+        min-height: 1474px;
+        margin-top: 110px;
     }
 
     .header {
@@ -26,6 +27,21 @@
         padding-left: 37px;
     }
 
+    .platform {
+        &__link {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+        &__name {
+            width: 97px;
+            height: 41px;
+        }
+    }
+
+    .nav-link {
+        padding: .5rem .5rem;
+    }
+
     .nav-m {
         margin-right: 100px;
     }
@@ -39,7 +55,8 @@
 @media (max-width: 960px) {
 
     .wrapper {
-        min-height: 1500px;;
+        min-height: 1500px;
+        margin-top: 80px;
     }
 
     .eWallet {
@@ -55,15 +72,19 @@
         }
     }
 
-    .nav-link {
-        padding: .5rem .5rem;
-    }
-
     .platform {
         &__link {
-            font-size: 12px;
+            font-size: 10px;
             line-height: 1.2;
         }
+        &__name {
+            width: 80px;
+            height: 35px;
+        }
+    }
+
+    .nav-link {
+        padding: .3rem .3rem;
     }
 
     .icon {
@@ -106,10 +127,13 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 778px){
     .wrapper {
-        min-height: 2000px;;
+        min-height: 1900px;
     }
+}
+
+@media (max-width: 720px) {
 
     .eWallet {
         &__account {
